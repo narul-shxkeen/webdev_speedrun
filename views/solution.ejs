@@ -1,0 +1,51 @@
+<%- include("partials/solution-header.ejs") %>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<div class="bigB">
+  <div class="navbar">
+    <div>
+    <p class="transform">| | |</p>
+    </div>
+    <p style="writing-mode: vertical-rl" class="p_transform">Vertical right to left.</p>
+    <p style="writing-mode: vertical-rl" class="p_transform">Copyright © <%= new Date().getFullYear() %>
+  </div>
+<div class="container">
+  <!-- section 1 -->
+  <section class="hero">
+    <h3>Lorem Ipsum Odor</h3>
+    <h1 style="text-align: center;"><span class="lorem">
+    <% if (locals.adjective){ %>
+<%= locals.adjective %>
+    <% } else { %>
+      Shape
+      <%}%>
+    </span><br>
+    <% if (locals.noun){ %>
+      <%= locals.noun %>
+          <% } else { %>
+            Shifter
+            <%}%> 
+  </h1>
+<form method="post" action="/submit"><p>Click to Generate</p><button type="submit">Band Name</p></button></form>
+  </section>
+  <!-- section 2 -->
+  <section class="text_area"><div class="para"><p style="font-weight: bold;" class="peek">Get Random Quotes<p>
+    
+    <% if (locals.quote){ %>
+      <p><%= locals.quote %></p>
+          <% } else { %>
+    
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos est, fugiat optio accusantium culpa officia laborum corrupti soluta quo exercitationem facere voluptatem sunt ut pariatur. Aliquid vero tempore cum deserunt.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor corrupti minus molestias, cumque nostrum odit in provident reprehenderit sed nesciunt sit neque eligendi culpa cupiditate facere eos repudiandae numquam!
+    <%}%>
+  </p>
+  <form method="post" action="/quote">
+    <button type="submit">Get a Quote</button>
+  </form>
+</section>
+</div>
+</div>
+
+<!-- section 3 -->
+
+   
+        <%- include("partials/solution-footer.ejs") %>
